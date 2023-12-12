@@ -1,0 +1,29 @@
+#i COULD NOT THE PROMPT TO COPY/PASTE
+  register = {'Michael': 'yes', 'john': 'no', 'Peter': 'yes', 'Mary': 'yes', 'paul': 'Yes'}
+
+def register_check(dict):
+    count = 0
+    for i in dict:
+        if dict[i] == 'yes':
+            count += 1
+        else:
+            continue
+    return count
+
+print(register_check(register))
+
+
+names = ['alex', 'kerry', 'dickson', 'John', 'Mary', 'carol', 'Rose', 'adam'] 
+
+def Lower(list):
+    listy = []
+    for i in list:
+        if i.islower():
+            listy.append(i)
+        else:
+            continue
+    
+    listy.sort(reverse=True)
+    return tuple(listy)
+
+print(Lower(names))
