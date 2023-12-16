@@ -1,0 +1,15 @@
+def user_name():
+    return input('please provide your email address: ').split('@')[0]
+
+
+
+
+def zeroed_code(lst): 
+    lst.pop()
+    lst.append(0)
+    lst[0] = 0
+    return lst
+nums = [2, 5, 7, 8, 9]
+
+print(zeroed_code(nums))
+print(f"your username is: {user_name()}")
