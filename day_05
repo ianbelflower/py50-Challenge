@@ -1,0 +1,33 @@
+
+def my_discount():
+
+    while True:
+        try: 
+            cost = float(input('Cost: '))
+            discount = float(input('discount: ').replace('%', ''))
+            break
+        except:
+            print('...')
+
+    return (1 - (discount * .01)) * cost 
+
+
+print(f'the price after the discount is: {my_discount()}')
+
+
+students = ['male', 'Female', 'female', 'male', 'male', 'male',
+             'female', 'male', 'Female', 'Male', 'Female', 'Male',
+             'female']
+
+def count_sex(student_body):
+    male = 0 
+    female = 0
+    for student in student_body:
+        if student.lower() == 'female':
+            female += 1
+        else:
+            male += 1
+    count = [male, female]
+    sex = ['Male', 'Female']
+    return list(zip(sex, count))
+
